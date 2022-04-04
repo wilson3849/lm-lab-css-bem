@@ -7,27 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>BEM Notation & OOCSS: Writing scaleable CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Glitch">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Paytone+One">
 </head>
 
 <body>
-    <h1>BEM Wars</h1>
-    <div class="container">
-        <div>
-            <h2>The Dark Side</h2>
-            <img src="./images/vader.jpeg">
-            <p>Nesting!</p>
-            <p>Conflict!</p>
-            <p>Specificity Wars!</p>
-            <p>Cookies</p>
+    <div class="page--h1"><h1>BEM Wars</h1></div>
+    <div class="container page--main ">
+        <div class="page--portion dark">
+            <h2 class="dark--h2">The Dark Side</h2>
+            <div class="page--card dark--card">
+                <img src="./images/vader.jpeg">
+                <p class="line1">Nesting!</p>
+                <p class="line2">Conflict!</p>
+                <p class="line3">Specificity Wars!</p>
+                <p class="line4">Cookies</p>
+            </div>
+            <div class="page--card dark--card">
+                <img src="./images/vader.jpeg">
+                <p class="line1">Nesting!(1)</p>
+                <p class="line2">Conflict!(1)</p>
+                <p class="line3">Specificity Wars!(1)</p>
+                <p class="line4">Cookies(1)</p>
+            </div>            
         </div>
 
-        <div>
-            <h2>The Force</h2>
-            <img src="./images/yoda.jpeg">
-            <p>Love</p>
-            <p>Beauty</p>
-            <p>CSS that Scales!</p>
-            <p>Great warrior. Wars not make one great!</p>
+        <div class="page--portion force">
+            <h2 class="force--h2">The Force</h2>
+            <div class="page--card force--card">
+                <img src="./images/yoda.jpeg">
+                <p class="line1">Love</p>
+                <p class="line2">Beauty</p>
+                <p class="line3">CSS that Scales!</p>
+                <p class="line4">Great warrior. Wars not make one great!</p>
+            </div>
+            <div class="page--card force--card">
+                <img src="./images/yoda.jpeg">
+                <p class="line1">Love(1)</p>
+                <p class="line2">Beauty(1)</p>
+                <p class="line3">CSS that Scales!(1)</p>
+                <p class="line4">Great warrior. Wars not make one great!(1)</p>
+            </div>
+
         </div>
     </div>
 </body>
